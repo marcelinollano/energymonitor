@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BBFE7003-84A8-4892-93FB-3443D2C21AE0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WebTableView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C3DEC54-50BA-413C-82A2-A288FC662712</key>
+		<string>https://github.com/NSCookbook/Recipe-16.2-Populating-a-UITableView-With-Data-From-The-Web---iOS-7-and-AFNetworking.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WebTableView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C3DEC54-50BA-413C-82A2-A288FC662712</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/NSCookbook/Recipe-16.2-Populating-a-UITableView-With-Data-From-The-Web---iOS-7-and-AFNetworking.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C3DEC54-50BA-413C-82A2-A288FC662712</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C3DEC54-50BA-413C-82A2-A288FC662712</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Recipe-16.2-Populating-a-UITableView-With-Data-From-The-Web---iOS-7-and-AFNetworking</string>
+		</dict>
+	</array>
+</dict>
+</plist>

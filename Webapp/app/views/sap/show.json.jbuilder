@@ -1,0 +1,1 @@
+json.extract! @sap, :id, :bill, :price, :energy, :created_at, :updated_at

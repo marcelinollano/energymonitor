@@ -1,0 +1,20 @@
+<% if flash[:notice] %>
+<div class="alert alert-success"><%= flash[:notice] %></div>
+<% end %>
+
+<div class="row">
+<% @things.each do |thing| %>
+  <div class="col-md-4">
+    <div class="well">
+      <h4><%= thing.name %> <span class="tag"><%= thing.watts %> W</span></h4>
+      <h1><%= thing.energy.round(3) %> <span class="unit">kWh</span></h1>
+      <h1><%= thing.cost.round(3) %> <span class="unit">€</span></h1>
+      <br>
+      <p>
+        <%= link_to 'Edit Details', edit_thing_path(thing), class: 'btn btn-primary btn-sm' %>
+        &nbsp;
+        <%= link_to 'Delete', thing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-sm' %>
+      </p>
+    </div>
+  </div>
+<% end %>

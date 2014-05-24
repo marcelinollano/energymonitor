@@ -1,0 +1,2 @@
+web: rails server
+faye: rackup faye.ru -s thin -E production

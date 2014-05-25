@@ -67,21 +67,26 @@ Here is a quick demo of the end result:
 
 ![Gifcast](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Gifcast.gif)
 
-
 ### Fair Warning
 
 The code in this project is messy and untested. Do not use it in production, I did very bad things to cut corners and have everything working. Every part of the project needs more work. Horrible things I did:
 
 - Send all the cURL calls unencrypted over HTTP.
-- No testing at all for the API, the client, no nothing.
+- No testing at all for the API, the client, nothing. Craftman rejoice.
 - Remove the authenticity token from Rails so Faye did not complain.
 - I refresh with Turbolinks the whole page instead of just changes.
 - No user authentication for the webapp or the iOS app.
 - Dumb, continuous, 0.5 seconds refresh on the iOS app.
 
-I think you get the idea. This is meant to be a proof of concept, not a production ready system. Run it in the real world at you own risk.
+I think you get the idea. This is meant to be a proof of concept, not a production ready system.
 
 ### Conclusions
+
+This is one of those projects that is like a milestone. In your daily work you learn stuff here and there but you never realize how much stuff you actually know. In this project there is a little bit of everything: electronics, server administration, networking, backend, frontend and mobile apps. Many different languages: Java-like, Python, Ruby, HTML, Javascript, CSS, Objetive-C and Bash. All very basic, but connecting it together makes more difficult.
+
+While hacking the iOS app from the code I found I also realized that XCode development environment is really nice to work with. Having worked with scripting languages is really refreshing to have real time evaluation of errors in the code and drag and drop to build the interface.
+
+Finally, I understood better what means "realtime". With the pub/sub model something closer to "realtime" but not really. After having everything running I realized that to have "true realtime" I would have to start by rethinking how the push button works. In the current version I push changes after the button goes off, but it should really report every few milliseconds and have polling in all the client apps. I can see how much more complex "true realtime" would be for a real world system like this.
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 

@@ -61,6 +61,18 @@ We are almost done. I added another piece to the puzzle. Because the prices of e
 bash ./SAP.sh
 ```
 
+Because I wanted to see changes after waiting a few milliseconds, I changed how the energy consumption is calculated taking milliseconds as seconds. If you go to the `thing.rb` file for the `Thing` model you will see how I am doing this:
+
+```Ruby
+def energy
+  # Take milliseconds as seconds
+  (self.time / 60) * (self.watts * 0.001) # kWh
+
+  # Take milliseconds as milliseconds
+  # (self.time / 3600000) * (self.watts * 0.001) # kWh
+end
+```
+
 Finally, you can also run the iOS app by opening the project under the `App` folder on XCode and building it. It will throw some warnings but do not worry, the iOS simulator will open with the app ready to rock. I  modified the app from [Joseph Lee Hoffman's work](http://josephleehoffman.com/ios-development) removing screens and adding a periodical refresh of the TableView.
 
 Here is a quick demo of the end result:

@@ -10,11 +10,11 @@ The project has many moving parts. I know it will be hard to replicate everythin
 
 ### Hardware Setup
 
-The hardware part could be simpler to be fair. If you have an Arduino with a [Wi-Fi shield](http://arduino.cc/en/Main/ArduinoWiFiShield) you can skip the Raspberry Pi altogether. I find the Arduino Uno and the 512MB Raspberry Pi to be the best to have around. They both are very well supported, have a huge community behind and are very flexible. Anyway, here are the components:
+The hardware part could be simpler to be fair. If you have an Arduino with a [Wi-Fi shield](http://arduino.cc/en/Main/ArduinoWiFiShield) you can skip the RPi altogether. I find the Arduino Uno and the 512MB RPi to be the best to have around. They both are very well supported, have a huge community behind and are very flexible. Anyway, here are the components:
 
 ![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
 
-You do not need the case for the RPi or the Wi-Fi dongle. I do not have my Internet router close to me so I connected the RPi to the home network and then the Arduino through USB to the RPi. If I need to upload software to the Arduino I just plug it to my laptop and then to the RPi again. You could do this directly through SSH, though.
+You do not need a case for the RPi nor the Wi-Fi dongle. I do not have my Internet router close to me so I connected the RPi to the home network and then the Arduino through USB to the RPi. If I need to upload software to the Arduino I just plug it to my laptop and then to the RPi again. You could do this directly through SSH, though.
 
 The labels "5v Cable" and "Ground Cable" are there just to point out how to wire it. I took the schematics from the [Arduino website](http://arduino.cc/en/tutorial/button):
 
@@ -24,11 +24,50 @@ Our energy monitor will be a lamp AKA a led. We will use a push button to toggle
 
 ### Software Setup
 
-Here is a quick demo demo of the end result:
+Ok, the first thing you need is to setup the RPi creating the SD card image. This used to be scary but now there is an [app for OSX](http://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/) and you will need the [Raspbian Wheezy image](http://www.raspberrypi.org/downloads/) too. Then connect through SSH to the RPi, user is `pi` and password is `raspbery`. You will need to install a few things:
+
+```
+sudo -i
+apt-get update
+apt-get upgrade
+raspi-config
+apt-get install vim screen python-serial curl
+```
+
+After that there is a Python script in the `Router` folder. This script will read the output of the Arduino through the USB serial port. You can run this with an `init.d` script or with a cron job. I just log using SSH, then use `screen` to run it:
+
+```
+screen
+python ./Router.py
+```
+
+Now, my laptop is on `192.168.0.12` on the local network and I always assign that IP to it. If you have a different IP you will need to edit the Python script so cURL can access your webapp on `http://192.168.0.12:3000` or whatever IP you have. With that we are ready to run the Rails app.
+
+Go to the `Webapp` folder and bootstrap the Rails app:
+
+```
+bundle install
+rake db:setup
+rake db:migrate
+rake db:seed
+foreman start
+```
+
+You can go to `http://0.0.0.0:3000` or `http://192.168.0.12:3000` to see the app running with some seed data already in there. Faye will run on `http://0.0.0.0:9292` or `http://192.168.0.12:9292`. You can take a look to the responsive layout by visiting the same URL on you phone.
+
+We are almost done. I added another piece to the puzzle. Because the prices of electricity fluctuate in the real world I created a `bash` script that cURLs to the API and changes that price. In this way I can simulate having another service feeding the system. This script is under the `SAP` folder, a homage to cutting edge technology. You can run it issuing the following command on your laptop:
+
+```
+bash ./SAP.sh
+```
+
+Finally, you can also run the iOS app by opening the project under the `App` folder on XCode and building it. The iOS simulator will open with the app ready to rock.
+
+Here is a quick demo of the end result:
 
 ![Gifcast](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Gifcast.gif)
 
-![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
+
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 

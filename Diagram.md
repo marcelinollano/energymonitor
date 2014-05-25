@@ -1,14 +1,13 @@
 ```
-
   SAP (Primary Backend)
           |
           |
           |
-  API (Rails App) --------------------------------
+  API (Localhost) --------------------------------
           |                     |                 |
           |                     |                 |
           |                     |                 |
-  Router (Rasberry Pi)     App (iOS)    Webapp (HTML, CSS, JS)
+  Router (Rasberry Pi)     App (iOS)     Webapp (Localhost)
           |
           |
           |

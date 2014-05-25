@@ -1,26 +1,30 @@
-<%= form_for(@thing) do |f| %>
-  <% if @thing.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@thing.errors.count, "error") %> prohibited this thing from being saved:</h2>
-
-      <ul>
-      <% @thing.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+<div class="row">
+  <div  class="col-md-5">
+    <%= form_for(@thing) do |f| %>
+      <% if @thing.errors.any? %>
+        <div id="error_explanation" class="alert alert-warning">
+          <h4>Oops! <%= pluralize(@thing.errors.count, "error") %> found:</h4>
+          <ul>
+          <% @thing.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="form-group">
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control" %>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :watts %>
+        <%= f.text_field :watts, class: "form-control" %>
+      </div>
+      <div class="actions">
+        <%= f.submit 'Update', :class => 'btn btn-primary'  %>
+        &nbsp;
+        <%= link_to 'Back', things_path, class: 'btn btn-default' %>
+      </div>
+    <% end %>
   </div>
-  <div class="form-group">
-    <%= f.label :watts %>
-    <%= f.text_field :watts, class: "form-control" %>
-  </div>
-  <div class="actions">
-    <%= f.submit 'Update', :class => 'btn btn-primary'  %>
-  </div>
-<% end %>
-
+</div>

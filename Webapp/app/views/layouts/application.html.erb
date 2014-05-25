@@ -10,7 +10,10 @@
 <body>
 
 <div class="container">
-  <h2>Energy Monitor</h2>
+  <div class="header">
+    <%= link_to "New Thing", new_thing_path, class: 'btn btn-primary btn-sm pull-right' %>
+    <h3>Energy Monitor</h3>
+  </div>
   <hr>
   <%= yield %>
 </div>

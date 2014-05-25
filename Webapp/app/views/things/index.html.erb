@@ -11,7 +11,7 @@
       <h1><%= thing.cost.round(3) %> <span class="unit">€</span></h1>
       <br>
       <p>
-        <%= link_to 'Edit Details', edit_thing_path(thing), class: 'btn btn-primary btn-sm' %>
+        <%= link_to 'Edit Thing', edit_thing_path(thing), class: 'btn btn-default btn-sm' %>
         &nbsp;
         <%= link_to 'Delete', thing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-default btn-sm' %>
       </p>

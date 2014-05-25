@@ -5,15 +5,35 @@ class ThingsController < ApplicationController
   # GET /things.json
   # GET /things.js
   def index
-    @things = Thing.all.order('id ASC')
+    @things = Thing.all.order('updated_at DESC')
   end
 
   # GET /sap/1.json
   def show
   end
 
+  # GET /things/new
+  def new
+    @thing = Thing.new
+  end
+
   # GET /things/1/edit
   def edit
+  end
+
+  # POST /things
+  # POST /things.json
+  def create
+    params[:thing][:time] = 0
+    @thing = Thing.new(thing_params)
+
+    respond_to do |format|
+      if @thing.save
+        format.html { redirect_to root_path, notice: 'The thing was created.' }
+      else
+        format.html { render :new }
+      end
+    end
   end
 
   # PATCH/PUT /things/1
@@ -23,7 +43,7 @@ class ThingsController < ApplicationController
 
     respond_to do |format|
       if @thing.update(thing_params)
-        format.html { redirect_to things_url, notice: 'Thing was successfully updated.' }
+        format.html { redirect_to things_url, notice: 'The thing was updated.' }
         format.json { render :show, status: :ok, location: @thing }
 
         # Realtime push
@@ -42,7 +62,7 @@ class ThingsController < ApplicationController
   def destroy
     @thing.destroy
     respond_to do |format|
-      format.html { redirect_to things_url, notice: 'Thing was successfully destroyed.' }
+      format.html { redirect_to things_url, notice: 'The thing was deleted.' }
       format.json { head :no_content }
     end
   end

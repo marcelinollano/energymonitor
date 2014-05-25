@@ -90,3 +90,6 @@ Finally, I understood better what means "realtime". With the pub/sub model somet
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 
+I hope you enjoyed this as much as I did building it and fear not, you can absolutely do something similar. If you get stuck just do a DuckDuckGo search or go to StackOverflow, this is charted territory.
+
+Have fun!

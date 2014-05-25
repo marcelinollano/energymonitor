@@ -70,7 +70,7 @@ Here is a quick demo of the end result:
 
 ### Fair Warning
 
-The code in this project is messy and untested. Do not use it in production, I did very bad things to cut corners and have everything working. Almost every part of the project needs more work. Horrible things that I did:
+The code in this project is messy and untested. Do not use it in production, I did very bad things to cut corners and have everything working. Every part of the project needs more work. Horrible things I did:
 
 - Send all the cURL calls unencrypted over HTTP.
 - No testing at all for the API, the client, no nothing.

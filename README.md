@@ -68,7 +68,20 @@ Here is a quick demo of the end result:
 ![Gifcast](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Gifcast.gif)
 
 
+### Fair Warning
+
+The code in this project is messy and untested. Do not use it in production, I did very bad things to cut corners and have everything working. Almost every part of the project needs more work. Horrible things that I did:
+
+- Send all the cURL calls unencrypted over HTTP.
+- No testing at all for the API, the client, no nothing.
+- Remove the authenticity token from Rails so Faye did not complain.
+- I refresh with Turbolinks the whole page instead of just changes.
+- No user authentication for the webapp or the iOS app.
+- Dumb, continuous, 0.5 seconds refresh on the iOS app.
+
+I think you get the idea. This is meant to be a proof of concept, not a production ready system. Run it in the real world at you own risk.
+
+### Conclusions
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 
-### Conclusions

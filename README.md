@@ -94,7 +94,7 @@ I think you get the idea. This is meant to be a proof of concept, not a producti
 
 ### Conclusions
 
-This is one of those projects that is like a milestone. In your daily work you learn stuff here and there but you never realize how much stuff you actually know. In this project there is a little bit of everything: electronics, server administration, networking, backend, frontend and mobile apps. Many different languages: Java-like, Python, Ruby, HTML, Javascript, CSS, Objetive-C and Bash. All very basic, but connecting it together makes more difficult.
+This is one of those projects that is like a milestone. In your daily work you learn stuff here and there but you never realize how much stuff you actually know. In this project there is a little bit of everything: electronics, server administration, networking, backend, frontend and mobile apps. Many different languages: Java-like, Python, Ruby, HTML, Javascript, CSS, Objetive-C and Bash. All very basic, but connecting it together makes it more difficult.
 
 While hacking the iOS app from the code I found I also realized that XCode development environment is really nice to work with. Having worked with scripting languages is really refreshing to have real time evaluation of errors in the code and drag and drop to build the interface.
 

@@ -1,6 +1,6 @@
 ## Energy Monitor
 
-I wanted to make a project with as much hype as possible. Hold your horses, this project features: An [Arduino](http://arduino.cc), a [Raspberry Pi](http://raspberrypi.org), a Rails API and client with server push through [Faye](http://faye.jcoglan.com), responsive layout using [Bootstrap](http://getbootstrap.com) and an iOS mobile app. I wanted to use [Node.js](http://nodejs.org) and put a map in there but I ran out of time. For the next time.
+I wanted to make a project with as much hype as possible. Hold your horses, this project features: An [Arduino](http://arduino.cc), a [Raspberry Pi](http://raspberrypi.org), a Rails API and client with server push through [Faye](http://faye.jcoglan.com), responsive layout using [Bootstrap](http://getbootstrap.com) and an iOS mobile app. I wanted to use [Node.js](http://nodejs.org), [Go](http://golang.org) and put a map in there, but I ran out of time. Maybe next time.
 
 The idea was to prototype as fast as I could a proof of concept of an Internet connected device. I chose to do an energy monitor. The idea is pretty simple: I have a thingy at home that consumes energy, I want to send how much energy consumes to a central webapp through an API. This API will be consumed by the iOS app and I will also have a responsive web version.
 

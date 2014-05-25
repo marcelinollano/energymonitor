@@ -4,11 +4,11 @@
           |
           |
           |
-	API (Rails App) ---------------------------------
+  API (Rails App) --------------------------------
           |                     |                 |
           |                     |                 |
           |                     |                 |
-	Router (Rasberry Pi)     App (iOS)    Webapp (HTML, CSS, JS)
+  Router (Rasberry Pi)     App (iOS)    Webapp (HTML, CSS, JS)
           |
           |
           |

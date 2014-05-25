@@ -2,9 +2,9 @@
 
 ![Poster](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Poster.jpg)
 
-![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
-
 ![Gifcast](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Gifcast.gif)
+
+![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 

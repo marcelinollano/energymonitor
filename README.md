@@ -6,7 +6,7 @@
 
 ![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
 
-![Wiring](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Wiring.jpg)
+![Wiring](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Wiring.png)
 
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 

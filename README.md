@@ -1,4 +1,4 @@
-# Energy Monitor
+## Energy Monitor
 
 ![Poster](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Poster.jpg)
 

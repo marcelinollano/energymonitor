@@ -61,7 +61,7 @@ We are almost done. I added another piece to the puzzle. Because the prices of e
 bash ./SAP.sh
 ```
 
-Finally, you can also run the iOS app by opening the project under the `App` folder on XCode and building it. The iOS simulator will open with the app ready to rock.
+Finally, you can also run the iOS app by opening the project under the `App` folder on XCode and building it. It will throw some warnings but do not worry, the iOS simulator will open with the app ready to rock. I  modified the app from [Joseph Lee Hoffman's work](http://josephleehoffman.com/ios-development) removing screens and adding a periodical refresh of the TableView.
 
 Here is a quick demo of the end result:
 
@@ -72,8 +72,3 @@ Here is a quick demo of the end result:
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 
 ### Conclusions
-
-### Sources
-
-http://josephleehoffman.com/ios-development
-http://arduino.cc/en/tutorial/button

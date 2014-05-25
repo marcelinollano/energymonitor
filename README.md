@@ -6,8 +6,11 @@
 
 ![Materials](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Materials.jpg)
 
+![Wiring](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Wiring.jpg)
+
 ![Apps](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Apps.jpg)
 
 ### Sources
 
-http://josephleehoffman.com/ios-development/
+http://josephleehoffman.com/ios-development
+http://arduino.cc/en/tutorial/button

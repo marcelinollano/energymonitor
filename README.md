@@ -20,7 +20,11 @@ The labels "5v Cable" and "Ground Cable" are there just to point out how to wire
 
 ![Wiring](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Wiring.png)
 
-Our energy monitor will be a lamp AKA a led. We will use a push button to toggle the lamp on and after toggling it off we will send the milliseconds to the RPi and from there to the webapp. The code to make the push button work is in the `Sensor` folder. Wire it up and upload the code. Moving on!
+Our energy monitor will be a lamp AKA a led. We will use a push button to toggle the lamp on and after toggling it off we will send the milliseconds to the RPi and from there to the webapp. The code to make the push button work is in the `Sensor` folder.
+
+Javier Gamarra ([@nhpatt](http://twitter.com/nhpatt) on Twitter) pointed me that you do not need the resistor if you use the [input pullup serial](http://arduino.cc/en/Tutorial/InputPullupSerial) of the Arduino. I did not know that and is pretty cool that Arduino has that feature for a very common problem.
+
+Wire it up and upload the code. Moving on!
 
 ### Software Setup
 

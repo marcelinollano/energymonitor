@@ -88,7 +88,7 @@ Here is a quick demo of the end result:
 The code in this project is messy and untested. Do not use it in production. I did very bad things to cut corners and have everything working. Every part of the project needs more work. Horrible things I did:
 
 - Send all the cURL calls unencrypted over HTTP.
-- No testing at all for the API, the client, nothing. Craftman rejoice.
+- No testing at all for the API, the client, nothing. Craftsman rejoice.
 - Remove the authenticity token from Rails so Faye did not complain.
 - I refresh with Turbolinks the whole page instead of just changes.
 - No user authentication for the webapp or the iOS app.

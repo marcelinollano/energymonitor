@@ -28,7 +28,7 @@ Wire it up and upload the code. Moving on!
 
 ### Software Setup
 
-Ok, the first thing you need is to setup the RPi creating the SD card image. This used to be scary but now there is an [app for OSX](http://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/) and you will need the [Raspbian Wheezy image](http://www.raspberrypi.org/downloads/) too. Then connect through SSH to the RPi, user is `pi` and password is `raspbery`. You will need to install a few things:
+Ok, the first thing you need is to setup the RPi creating the SD card image. This used to be scary but now there is an [app for OSX](http://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/) and you will need the [Raspbian Wheezy image](http://www.raspberrypi.org/downloads/) too. Then connect through SSH to the RPi, user is `pi` and password is `raspberry`. You will need to install a few things:
 
 ```
 sudo -i

@@ -1,4 +1,4 @@
-## Energy Monitor
+# Energy Monitor
 
 I wanted to make a project with as much hype as possible. Hold your horses, this project features: An [Arduino](http://arduino.cc), a [Raspberry Pi](http://raspberrypi.org), a Rails API and client with server push through [Faye](http://faye.jcoglan.com), responsive layout using [Bootstrap](http://getbootstrap.com) and an iOS mobile app. I wanted to use [Node.js](http://nodejs.org), [Go](http://golang.org) and put a map in there, but I ran out of time. Maybe next time.
 
@@ -8,7 +8,7 @@ The idea was to prototype as fast as I could a proof of concept of an Internet c
 
 The project has many moving parts. I know it will be hard to replicate everything exactly the same, but I hope some parts could help you build your own system. The truth is I scrapped most of its parts from Internet and hack it together. You can do something similar any day, I am sure.
 
-### Hardware Setup
+## Hardware Setup
 
 The hardware part could be simpler to be fair. If you have an Arduino with a [Wi-Fi shield](http://arduino.cc/en/Main/ArduinoWiFiShield) you can skip the RPi altogether. I find the Arduino Uno and the 512MB RPi to be the best to have around. They both are very well supported, have a huge community behind and are very flexible. Anyway, here are the components:
 
@@ -26,7 +26,7 @@ Javier Gamarra ([@nhpatt](http://twitter.com/nhpatt) on Twitter) pointed me that
 
 Wire it up and upload the code. Moving on!
 
-### Software Setup
+## Software Setup
 
 Ok, the first thing you need is to setup the RPi creating the SD card image. This used to be scary but now there is an [app for OSX](http://alltheware.wordpress.com/2012/12/11/easiest-way-sd-card-setup/) and you will need the [Raspbian Wheezy image](http://www.raspberrypi.org/downloads/) too. Then connect through SSH to the RPi, user is `pi` and password is `raspberry`. You will need to install a few things:
 
@@ -83,7 +83,7 @@ Here is a quick demo of the end result:
 
 ![Gifcast](https://raw.githubusercontent.com/marcelinollano/energy-monitor/master/Assets/Gifcast.gif)
 
-### Fair Warning
+## Fair Warning
 
 The code in this project is messy and untested. Do not use it in production. I did very bad things to cut corners and have everything working. Every part of the project needs more work. Horrible things I did:
 
@@ -96,7 +96,7 @@ The code in this project is messy and untested. Do not use it in production. I d
 
 I think you get the idea. This is meant to be a proof of concept, not a production ready system.
 
-### Conclusions
+## Conclusions
 
 This is one of those projects that is like a milestone. In your daily work you learn stuff here and there but you never realize how much stuff you actually know. In this project there is a little bit of everything: electronics, server administration, networking, backend, frontend and mobile apps. Many different languages: Java-like, Python, Ruby, HTML, Javascript, CSS, Objetive-C and Bash. All very basic, but connecting it together makes it more difficult.
 
